@@ -128,7 +128,34 @@ ultimate-imposter/
 - **🔐 Session-based persistence** - Each game gets a unique Session ID
 - **📱 Cross-device support** - Share Session ID to continue on another device (with server mode)
 
-## 🛠️ Technology
+## 🖼️ Screenshots
+
+Here are a few screenshots of `ultimate-imposter` in action (categorized by gameplay):
+
+### Setup Phase
+<p align="center">
+  <img src="docs/screenshots/screenshot-01.png" alt="Setup Phase" width="280" />
+</p>
+
+### Assignment Phase
+<p align="center">
+  <img src="docs/screenshots/screenshot-02.png" alt="Discussion Phase" width="280" />
+  <img src="docs/screenshots/screenshot-03.png" alt="Discussion Phase" width="280" />
+  <img src="docs/screenshots/screenshot-04.png" alt="Voting Phase" width="280" />
+</p>
+
+### Discussion & Voting Phase
+<p align="center">
+  <img src="docs/screenshots/screenshot-05.png" alt="Voting Phase" width="280" />
+</p>
+
+### Eviction & Scoring Phase
+<p align="center">
+  <img src="docs/screenshots/screenshot-06.png" alt="Scoring Phase" width="280" />
+  <img src="docs/screenshots/screenshot-07.png" alt="Scoring Phase" width="280" />
+</p>
+
+## �🛠️ Technology
 
 - **Framework**: Dioxus 0.7
 - **Language**: Rust
@@ -349,7 +376,7 @@ For production deployment on cloud platforms:
 
 **Deploy to DigitalOcean, AWS, or any VPS:**
 1. SSH into your server
-2. Install Docker: `curl -fsSL https://get.docker.com -o get-docker.sh && sh get-docker.sh`
+2. Install Docker: `curl -fsSL https://get.docker.com -o get-docker.sh && sh get.docker.sh`
 3. Clone your repository: `git clone https://github.com/yourusername/ultimate-imposter.git`
 4. Build and run: `cd ultimate-imposter && docker build -t ultimate-imposter . && docker run -d -p 80:80 ultimate-imposter`
 
