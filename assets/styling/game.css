@@ -379,13 +379,17 @@ body {
 }
 
 .card-word {
-    font-size: 3.5em;
+    font-size: clamp(2.2rem, 6vw, 3.5rem);
     font-weight: 900;
     color: white;
     text-align: center;
     margin-bottom: 20px;
     text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     letter-spacing: -2px;
+    line-height: 1.1;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    padding: 0 8px;
     position: relative;
     z-index: 1;
 }
@@ -878,6 +882,18 @@ body {
     border-radius: var(--radius-md);
 }
 
+.imposter-summary {
+    margin-top: 18px;
+}
+
+.imposter-name {
+    font-weight: 800;
+    font-size: 1.2em;
+    color: #1f2937;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
 /* Words Reveal */
 .words-reveal {
     margin: 25px 0;
@@ -936,6 +952,8 @@ body {
     color: #111;
     text-transform: uppercase;
     letter-spacing: 1px;
+    overflow-wrap: anywhere;
+    word-break: break-word;
 }
 
 @media (max-width: 600px) {
@@ -947,6 +965,8 @@ body {
     
     .word-value {
         font-size: 1.2em;
+        overflow-wrap: anywhere;
+        word-break: break-word;
     }
 }
 
